@@ -1,0 +1,188 @@
+:root {
+    --brand-primary: #2563eb;
+    --brand-primary-dark: #1e40af;
+    --brand-accent: #38bdf8;
+    --brand-ink: #0f172a;
+    --brand-muted: #64748b;
+    --page-bg: #f8fafc;
+}
+
+body {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at top left, rgba(37, 99, 235, 0.16), transparent 30%),
+        linear-gradient(135deg, #eef2ff 0%, var(--page-bg) 45%, #e0f2fe 100%);
+    color: var(--brand-ink);
+    font-family: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.login-page {
+    min-height: 100vh;
+}
+
+.login-shell {
+    width: min(100%, 1040px);
+    overflow: hidden;
+    border: 0;
+    border-radius: 2rem;
+    box-shadow: 0 24px 70px rgba(15, 23, 42, 0.14);
+}
+
+.brand-panel {
+    position: relative;
+    isolation: isolate;
+    min-height: 100%;
+    padding: 3rem;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at top right, rgba(56, 189, 248, 0.34), transparent 32%),
+        linear-gradient(145deg, rgba(30, 64, 175, 0.98), rgba(37, 99, 235, 0.94));
+    color: #fff;
+}
+
+.brand-panel::before,
+.brand-panel::after {
+    position: absolute;
+    z-index: -1;
+    width: 18rem;
+    height: 18rem;
+    content: "";
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.brand-panel::before {
+    top: -6rem;
+    right: -5rem;
+}
+
+.brand-panel::after {
+    bottom: -8rem;
+    left: -7rem;
+}
+
+.brand-mark {
+    display: inline-flex;
+    gap: 0.75rem;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.brand-mark-icon {
+    display: inline-grid;
+    width: 3rem;
+    height: 3rem;
+    place-items: center;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.18);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+}
+
+.brand-copy {
+    max-width: 26rem;
+}
+
+.brand-copy h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.05em;
+}
+
+.brand-copy p {
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.brand-stat {
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 1.25rem;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+}
+
+.login-card {
+    padding: clamp(2rem, 6vw, 4rem);
+    background: rgba(255, 255, 255, 0.96);
+}
+
+.login-card .form-control {
+    min-height: 3.25rem;
+    border-color: #dbe3ef;
+    border-radius: 0.9rem;
+}
+
+.login-card .form-control:focus {
+    border-color: var(--brand-primary);
+    box-shadow: 0 0 0 0.25rem rgba(37, 99, 235, 0.14);
+}
+
+.login-card .form-label {
+    color: var(--brand-ink);
+    font-weight: 600;
+}
+
+.btn-login {
+    min-height: 3.25rem;
+    border: 0;
+    border-radius: 0.9rem;
+    background: linear-gradient(135deg, var(--brand-primary), var(--brand-primary-dark));
+    box-shadow: 0 14px 30px rgba(37, 99, 235, 0.28);
+    font-weight: 700;
+}
+
+.btn-login:hover,
+.btn-login:focus {
+    background: linear-gradient(135deg, #1d4ed8, #1e3a8a);
+    box-shadow: 0 16px 34px rgba(37, 99, 235, 0.34);
+}
+
+.text-muted-custom {
+    color: var(--brand-muted);
+}
+
+.register-link {
+    color: var(--brand-primary);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.register-link:hover,
+.register-link:focus {
+    color: var(--brand-primary-dark);
+    text-decoration: underline;
+}
+
+
+@media (min-width: 992px) {
+    .min-vh-lg-75 {
+        min-height: 75vh;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .login-shell {
+        border-radius: 1.5rem;
+    }
+
+    .brand-panel {
+        min-height: 22rem;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .login-page {
+        padding: 1rem !important;
+    }
+
+    .login-shell {
+        border-radius: 1.25rem;
+    }
+
+    .brand-panel,
+    .login-card {
+        padding: 1.5rem;
+    }
+}
