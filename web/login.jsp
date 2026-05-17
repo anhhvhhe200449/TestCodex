@@ -1,6 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
 <html lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -11,7 +10,6 @@
         <link rel="stylesheet" href="assets/css/login.css">
     </head>
     <body>
-        <h1>Hello World!</h1>
         <main class="login-page d-flex align-items-center justify-content-center p-4">
             <section class="login-shell card">
                 <div class="row g-0 min-vh-lg-75">
