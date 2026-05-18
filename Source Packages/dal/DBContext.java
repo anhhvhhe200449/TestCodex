@@ -1,0 +1,53 @@
+package dal;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.Properties;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author FPT University - PRJ30X
+ * @Students: You are NOT allowed to edit this class 
+ */
+public class DBContext {
+    protected Connection connection;
+    public DBContext() {
+        try {
+            Properties properties = new Properties();
+            //InputStream inputStream = getClass().getClassLoader().getResourceAsStream("../ConnectedDB.properties");
+                       InputStream inputStream = getClass().getClassLoader().getResourceAsStream("testdb/ConnectedDB.properties");
+
+            try {
+                properties.load(inputStream);
+            } catch (IOException ex) {
+                Logger.getLogger(DBContext.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            String user = properties.getProperty("userID");
+            String pass = properties.getProperty("password");
+            String url = properties.getProperty("url");
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            connection = DriverManager.getConnection(url, user, pass);
+        } catch (ClassNotFoundException | SQLException ex) {
+            Logger.getLogger(DBContext.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
+    public static void main(String[] args) {
+    DBContext db = new DBContext();
+    if (db.connection != null) {
+        System.out.println("Connect SQL SUCCESS");
+    } else {
+        System.out.println("Connect SQL FAIL");
+    }
+}
+}
