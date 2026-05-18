@@ -48,7 +48,8 @@ public class LoginServlet extends HttpServlet {
             request.setAttribute("error", "Sai tài khoản hoặc mật khẩu");
             request.getRequestDispatcher("/login.jsp").forward(request, response);
         } else {
-            request.getSession().setAttribute("user", user);            
+            request.getSession().setAttribute("user", user);   
+            response.sendRedirect("home.jsp");
         }
     }
 

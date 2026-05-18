@@ -56,6 +56,11 @@
                                 <h2 class="display-6 fw-bold mb-2">Sign in to your account</h2>
                                 <p class="text-muted-custom mb-0">Enter your credentials to continue to the recruitment dashboard.</p>
                             </div>
+                            
+                             <% String error = (String) request.getAttribute("error"); %>
+                            <% if (error != null) { %>
+                                <div class="alert alert-danger" role="alert"><%= error %></div>
+                            <% } %>
 
                             <form action="login" method="post" class="needs-validation" novalidate>
                                 <div class="mb-3">
