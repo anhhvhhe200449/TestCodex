@@ -1,7 +1,7 @@
 <%-- 
-    Document   : home
-    Created on : May 17, 2026, 11:05:01 PM
-    Author     : LOQ
+    Document   : postJob
+    Created on : May 17, 2026, 11:33:51 PM
+    Author     : ADMIN
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -12,7 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <a href="login.jsp" class="register-link">Sign in</a>
-        <a href="register.jsp" class="register-link">Create an account</a>
+        <h1>Hello World!</h1>
     </body>
 </html>

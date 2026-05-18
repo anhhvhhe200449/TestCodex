@@ -18,9 +18,9 @@
                             <div class="brand-mark">
                                 <span class="brand-mark-icon" aria-hidden="true">
                                     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7 7V6a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                        <path d="M4 8h16v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V8Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                                        <path d="M9 12h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M7 7V6a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M4 8h16v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V8Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                                    <path d="M9 12h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                                     </svg>
                                 </span>
                                 HirePath
@@ -74,8 +74,6 @@
                                 </div>
 
                                 <button type="submit" class="btn btn-primary btn-login w-100 mb-4">Login</button>
-<<<<<<< Updated upstream
-=======
                                 <div class="auth-divider mb-4">
                                     <span>or</span>
                                 </div>
@@ -91,7 +89,6 @@
                                     </span>
                                     Continue with Google
                                 </a>
->>>>>>> Stashed changes
 
                                 <p class="text-center text-muted-custom mb-0">
                                     New to HirePath?
