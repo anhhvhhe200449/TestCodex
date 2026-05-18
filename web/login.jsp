@@ -44,7 +44,7 @@
                                         <div class="fs-3 fw-bold">98%</div>
                                         <div class="small text-white-50">Placement tracking</div>
                                     </div>
-                                </div>
+</div>
                             </div>
                         </aside>
                     </div>
@@ -78,11 +78,11 @@
                                     <span>or</span>
                                 </div>
 
-                                <a href="https://accounts.google.com/o/oauth2/v2/auth?client_id=586221512411-jmr2l5p40a322138s6j4qr3aah84oi06.apps.googleusercontent.com&redirect_uri=http://localhost:8080/TestCodex/auth/google&response_type=code&scope=openid%20email%20profile" class="btn btn-google w-100 mb-4">
+                                <a href="https://accounts.google.com/o/oauth2/v2/auth?client_id=586221512411-jmr2l5p40a322138s6j4qr3aah84oi06.apps.googleusercontent.com&amp;redirect_uri=http%3A%2F%2Flocalhost%3A8080%2FTestCodex%2Fauth%2Fgoogle&amp;response_type=code&amp;scope=openid%20email%20profile" class="btn btn-google w-100 mb-4">
                                     <span class="google-icon" aria-hidden="true">
                                         <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
                                         <path fill="#FFC107" d="M43.6,20.5H42V20H24v8h11.3C33.7,32.7,29.3,36,24,36c-6.6,0-12-5.4-12-12s5.4-12,12-12c3,0,5.7,1.1,7.8,2.9l5.7-5.7C34.1,6.1,29.3,4,24,4C12.9,4,4,12.9,4,24s8.9,20,20,20s20-8.9,20-20C44,22.7,43.8,21.6,43.6,20.5z"/>
-                                        <path fill="#FF3D00" d="M6.3,14.7l6.6,4.8C14.8,15.1,19,12,24,12c3,0,5.7,1.1,7.8,2.9l5.7-5.7C34.1,6.1,29.3,4,24,4C16.3,4,9.7,8.3,6.3,14.7z"/>
+<path fill="#FF3D00" d="M6.3,14.7l6.6,4.8C14.8,15.1,19,12,24,12c3,0,5.7,1.1,7.8,2.9l5.7-5.7C34.1,6.1,29.3,4,24,4C16.3,4,9.7,8.3,6.3,14.7z"/>
                                         <path fill="#4CAF50" d="M24,44c5.2,0,9.9-2,13.4-5.3l-6.2-5.2C29.2,35.1,26.7,36,24,36c-5.3,0-9.7-3.3-11.4-7.9l-6.5,5C9.5,39.6,16.2,44,24,44z"/>
                                         <path fill="#1976D2" d="M43.6,20.5H42V20H24v8h11.3c-1,2.6-2.7,4.7-4.9,6.1l0,0l6.2,5.2C36.2,39.7,44,34,44,24C44,22.7,43.8,21.6,43.6,20.5z"/>
                                         </svg>
